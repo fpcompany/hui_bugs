@@ -1,0 +1,19 @@
+[package]
+name = "bevy-hui-0-7-repro"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bevy = "0.19"
+bevy_hui = "0.7.0"
+
+[[bin]]
+name = "bug1_relayout"
+path = "src/bug1_relayout.rs"
+
+[[bin]]
+name = "bug2_root_scope"
+path = "src/bug2_root_scope.rs"
+
+#[patch.crates-io]
+#bevy_hui = { path = "../vclient/vendor/bevy_hui" }
