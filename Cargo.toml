@@ -15,5 +15,6 @@ path = "src/bug1_relayout.rs"
 name = "bug2_root_scope"
 path = "src/bug2_root_scope.rs"
 
+#uncomment to fix
 #[patch.crates-io]
-#bevy_hui = { path = "../vclient/vendor/bevy_hui" }
+#bevy_hui = { git = "https://github.com/fpcompany/hui_patch.git" }
